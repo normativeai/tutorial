@@ -1,0 +1,113 @@
+h1, h2, h3, h4, h5 {
+  font-family: "Lucida Grande",Verdana,Lucida,Helvetica,Arial,sans-serif;
+}
+
+body {
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  margin: 0;
+  padding: 0;
+  background: #eee;
+}
+
+#container1 {
+  width: 90%;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto 20px;
+  background: #fff;
+  text-align: left;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  box-shadow: 5px 10px 20px #888;
+  -moz-box-shadow: 5px 10px 20px #888;
+}
+
+#container2 {
+  width: 88%;
+  margin: 6%;
+  padding: 10px;
+  text-align: justify;
+}
+
+hr {
+  border: none;
+  padding-bottom: 0em; margin: .5em 0em;
+  text-align: left; clear: both;
+  color: #005500;
+  background: #005500;
+  height: 1px;
+}
+
+a:link {
+    text-decoration:none;
+    color: #0000cc;
+}    /* unvisited link */
+
+a:visited {
+    text-decoration:none;
+    color: #000099;
+} /* visited link */
+
+a:hover {
+    text-decoration:none;
+    color: #0000ee;
+}   /* mouse over link */
+
+a:active {
+    text-decoration:none;
+    color: #4040ee;
+}  /* selected link */
+
+
+h1 {
+  font: 100% Palatino, Georgia, Verdana, Tahoma, Arial, sans-serif;
+  font-weight: bold;
+  color: #006000;
+  text-align: center;
+  font-size: 25px;
+}
+
+h2 {
+  font: 100% Palatino, Georgia, Verdana, Tahoma, Arial, sans-serif;
+  color: #006000;
+  font-size: 14pt;
+  margin-top: 20px;
+}
+
+h3 {
+  color: #000080;
+  font-size: 12pt;
+  margin-top: 20px;
+}
+
+ul {
+  padding-left: 25px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+p {
+  width: 100%;
+}
+
+#cent {
+  width: 100%;
+  text-align: center;
+}
+
+table {
+    background-color:#FFFFFF;
+    border: medium #000 1px;
+    width: 480px;
+    margin-left: 20px;
+}
+
+table td {
+    padding: 5px;
+    border: medium #000 1px;
+    border-collapse: collapse;
+    vertical-align:top;
+}
+
