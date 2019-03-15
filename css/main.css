@@ -10,3 +10,13 @@ header {
 section {
   padding: 150px 0;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#icon {
+  max-height: 50px;
+  padding: 0px 10px 0px 10px;
+}
