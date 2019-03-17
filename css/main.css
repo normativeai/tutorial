@@ -20,3 +20,10 @@ img {
   max-height: 50px;
   padding: 0px 10px 0px 10px;
 }
+
+a:link#icail {
+  color: black;
+}
+a:visited#icail {
+  color: purple;
+}
