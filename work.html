@@ -147,6 +147,20 @@
               <li><span style="color:slateblue" title="term: choice(Law,Part)">The choice</span> <span style="color:olive" title="connector: definitional only if"> shall be made</span> <span style="color:peru" title="term: expressed(choice(Law,Part)">expressly</span> <span style="color:gray" title="connector: or">or</span> <span style="color:mediumvioletred" title="term: demonstrated_certainity(choice(Law, Part))">clearly demonstrated by the terms of the contract</span> <span style="color:thistle" title="connector: or">or</span> <span style="color:teal" title="term: demonstrated_circumstances(choice(Law,Part))">the circumstances of the case</span>.</li>
               <li><span style="color:mediumseagreen" title="term: choice(Law,Part)">By their choice<span> <span style="color:crimson" title="equality">the parties can select the law applicable to</span> <span style="color:limegreen" title="choice(Law,whole)">the whole</span> <span style="color:yellowgreen" title="connector: or">or</span> to <span style="color:steelblue" title="choice(Law,part(SomePart))">part only of the contract</span>.</li>
             </ul>
+            <li>Once we finish a norm, we can ommediately check if it is consistent with respect to the other norms. If it is not, we can
+              deactivate norms until we find which group of norms is responsible for the inconsistency. Removing inconsistencies is
+              crucial for the correctness of an interpretation an the tool can be used in order to detect and correct such problems.</li>
+            <li>For each norm, we can also check if it is independency with respect to the remaining norms.</li>
+            <li>Lastly, we can move now from the legislation editor to the queries one and add different queries. Queries try to
+            apply the interpretation to specific cases and has, therefore, further assumptions. This assumptions can also be
+            checked for consistency with regard to the legislation. The following is an example of such query</li>
+            <ul>
+              <li>Which law is applicable if a choice is made of using the Czech law  for the whole contract
+                but it was demonstrated only for the first part. We also know that
+                the contract is about franchise and that the habitual law is the French law.
+              </li>
+              <li>TODO: annotate the above sentence so the assumptions and goal can be extracted.</li>
+            </ul>
           </ul>
         </div>
       </div>
