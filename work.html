@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>NAI - The Normative Reasoner - Tutorial</title>
+
+  <link rel="shortcut icon" type="image/png" href="img/nai.png"/>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"> NAI <img id="icon" class=".img-fluid" src="img/nai.png"/> The Normative Reasoner</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#description">Description</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#example">Example</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#structure">Structure</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#material">Material</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+            <h1>The NAI Tutorial</h1>
+            <h3>June 21st, 2019  |  Montréal (Québec), Canada</h3>
+            <h4>Co-located with <a id="icail" href="https://icail2019-cyberjustice.com/">The 17th International Conference on Artificial Intelligence and Law (ICAIL 2019)</a></h4>
+            <p class="lead">Automated deduction is a field of research in artificial intelligence whose outputs are potentially relevant
+            for reasoning in the legal domain; however, only few connections between the two areas have been explored
+            so far. In particular, recent years have witnessed several attempts at making general tools for automated
+            reasoning accessible to experts of legal texts; the present tutorial for ICAIL aims at introducing people with
+            legal knowledge to the use of these tools.</p>
+    </div>
+  </header>
+
+  <section id="description">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Description</h2>
+          <p class="lead">The proposed tutorial is intended to make people from the law community acquainted with formal tools for
+          efficient and automated reasoning over legal texts. </p>
+          <p class="lead"><strong>How can computers aid legal practitioners in their work?</strong> The interpretation of legal texts
+          and regulations depend on many factors such as experience and context. Nevertheless, once an interpretation is given,
+          a computer can help in several ways:</p>
+          <ul>
+            <li>It can check if the interpretation is consistent, i.e. if our understanding of the legal text avoids contradictory
+            conclusions. For example, contradictory conclusions can be that you are obliged to build a fence around your house but, at the same time, you are permitted not to.</li>
+            <li>It can check if different norms are redundant and can therefore be removed without harming the correctness of
+              the legal document. For example, having a norm describing the obligation to pay a fine of $50 when parking incorrectly
+              (and where the definition of incorrectly includes, among other things, parking against the direction of the traffic),
+              while another norm specifies the obligation to pay a fine of $50 when parking against the direction of traffic.</li>
+            <li>It can help reasoning fully automatically. For example, given that I parked incorrectly but had an emergency, am I obliged to pay
+            the fine? Can I appeal? </li>
+          </ul>
+          <p class="lead">The help of a computer is not only limited to the three points described above. For example, once an interpretation is
+          given, a computer can be used in order to visualize all possible normative paths and can therefore help judges avoid choosing
+          a path which does not follow their interpretation. Or, it can be used in order to look for information, such as evidence, which can
+          help making a correct normative decision. In this tutorial we are going to focus though only on the three points described above
+          since they are supported by the current version of the NAI tool.</p>
+          <p class="lead"><strong>What software do I need in order to use the NAI tool?</strong> The tool is a web application,
+          which means that the only software required is a browser, such as Firefox or Chrome. </p>
+          <p class="lead"><strong>What knowledge and skills are required in order to be able to use the NAI tool?</strong>
+          Clearly, the most important task is the interpretation of the text. We believe that any tool whose goal is to aid
+          legal practitioners must make this task as easy as possible. At the same time, giving an interpretation which
+          is unambiguous and formal enough, so it can be used in order to answer arbitrary questions, requires the
+          understanding of some formal language. This is the main task of the tutorial's first two sessions.
+          Once an interpretation was formalized within the tool, the computer can be used in order to support the three operations
+          described above. The use of this part of the tool is handled in the third session of the tutorial.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="example" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Example</h2>
+          <p class="lead">Consider the <a href="https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=celex%3A32008R0593"/>Regulation (EC) No 593/2008 of the European Parliament and of the Council of 17 June 2008 on the law applicable to contractual obligations (Rome I)</a>.
+          This regulation specifies different situations and cases which should affect the law used in contracts. In this example
+          we focus on articles 3 and 4.</p>
+          <p class="lead"><strong>Article 3 - Freedom of choice</strong></p>
+          <ol>
+            <li>A contract shall be governed by the law chosen by the parties. The choice shall be made expressly or clearly demonstrated by the terms of the contract or the circumstances of the case. By their choice the parties can select the law applicable to the whole or to part only of the contract.</li>
+            <li>The parties may at any time agree to subject the contract to a law other than that which previously governed it, whether as a result of an earlier choice made under this Article or of other provisions of this Regulation. Any change in the law to be applied that is made after the conclusion of the contract shall not prejudice its formal validity under Article 11 or adversely affect the rights of third parties.</li>
+            <li>Where all other elements relevant to the situation at the time of the choice are located in a country other than the country whose law has been chosen, the choice of the parties shall not prejudice the application of provisions of the law of that other country which cannot be derogated from by agreement.</li>
+            <li>Where all other elements relevant to the situation at the time of the choice are located in one or more Member States, the parties' choice of applicable law other than that of a Member State shall not prejudice the application of provisions of Community law, where appropriate as implemented in the Member State of the forum, which cannot be derogated from by agreement.</li>
+            <li>The existence and validity of the consent of the parties as to the choice of the applicable law shall be determined in accordance with the provisions of Articles 10, 11 and 13.</li>
+          </ol>
+          <p class="lead"><strong>Article 4 - Applicable law in the absence of choice</strong></p>
+          <ol>
+            <li>To the extent that the law applicable to the contract has not been chosen in accordance with Article 3 and without prejudice to Articles 5 to 8, the law governing the contract shall be determined as follows:</li>
+            <ol>
+              <li>a contract for the sale of goods shall be governed by the law of the country where the seller has his habitual residence;</li>
+              <li>a contract for the provision of services shall be governed by the law of the country where the service provider has his habitual residence;</li>
+              <li>a contract relating to a right in rem in immovable property or to a tenancy of immovable property shall be governed by the law of the country where the property is situated;</li>
+              <li>notwithstanding point (c), a tenancy of immovable property concluded for temporary private use for a period of no more than six consecutive months shall be governed by the law of the country where the landlord has his habitual residence, provided that the tenant is a natural person and has his habitual residence in the same country;</li>
+              <li>a franchise contract shall be governed by the law of the country where the franchisee has his habitual residence;</li>
+              <li>a distribution contract shall be governed by the law of the country where the distributor has his habitual residence;</li>
+              <li>a contract for the sale of goods by auction shall be governed by the law of the country where the auction takes place, if such a place can be determined;</li>
+              <li>a contract concluded within a multilateral system which brings together or facilitates the bringing together of multiple third-party buying and selling interests in financial instruments, as defined by Article 4(1), point (17) of Directive 2004/39/EC, in accordance with non-discretionary rules and governed by a single law, shall be governed by that law.</li>
+            </ol>
+            <li>Where the contract is not covered by paragraph 1 or where the elements of the contract would be covered by more than one of points (a) to (h) of paragraph 1, the contract shall be governed by the law of the country where the party required to effect the characteristic performance of the contract has his habitual residence.</li>
+            <li>Where it is clear from all the circumstances of the case that the contract is manifestly more closely connected with a country other than that indicated in paragraphs 1 or 2, the law of that other country shall apply.</li>
+            <li>Where the law applicable cannot be determined pursuant to paragraphs 1 or 2, the contract shall be governed by the law of the country with which it is most closely connected.</li>
+          </ol>
+          <p class="lead">Our main task is the formalization of the above norms. In order to make this task as simple and intuitive as possible,
+          we have chosen to support it via annotations.</p>
+          <ul>
+            <li>The user first needs to login to the system and create a new legislation</li>
+            <li>The user then copies the text as is from the legislation and pastes it in the text annotator within the tool</li>
+            <li>The user can now annotate the norms with her/his interpretation. Let us demonstrate it on the first item of Article 3.
+            A note, the annotation tool allows for different annotations to be assigned to the same part of a sentence. This page
+            shows a simplified version of this tool. Please hover with the mouse above the annotated (colored) text in order to see the
+            annotation.</li>
+            <ul>
+              <li><span style="color:red" title="term: contract(Law,Part)">A contract</span> <span style="color:limegreen" title="connector: obligation only if">shall be governed by </span> <span style="color:dodgerblue" title="term: valid_choise(Law,Part)">the law chosen by the parties.</span></li>
+              <li><span style="color:slateblue" title="choice(Law,Part)">The choice</span> <span style="color:olive" title="connector: definitional only if"> shall be made</span> <span style="color:peru" title="term: expressed(choice(Law,Part)">expressly</span> <span style="color:gray" title="connector: or">or</span> <span style="color:mediumvioletred" title="term: demonstrated_certainity(choice(Law, Part))">clearly demonstrated by the terms of the contract</span> <span style="color:thistle" title="connector: or">or</span> <span style="color:teal" title="term: demonstrated_circumstances(choice(Law,Part))">the circumstances of the case</span>.</li>
+              <li><span style="color:slateblue" title="choice(Law,Part)">By their choice<span> <span style="color:slateblue" title="choice(Law,Part)">the parties can select the law applicable to</span> <span style="color:slateblue" title="choice(Law,Part)">the whole</span> <span style="color:slateblue" title="choice(Law,Part)">or</span> to <span style="color:slateblue" title="choice(Law,Part)">part only of the contract</span>.</li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="structure">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Structure</h2>
+          <p class="lead">The tutorial consists of four lectures</p>
+          <h4>Introduction to a normative logic (given by <a href="https://tomer.libal.info/">Tomer Libal</a>)</h4>
+          <p class="lead">This lecture will introduce the audience to propositional normal modal logic and to
+          two specific logics, the Standard Deontic Logic (SDL) and the DL* logic.</p>
+          <h4>Formalization of legal texts (given by Tereza Novotná)</h4>
+          <p class="lead">The DL* logic is suitable for the formalization of legal documents. This lecture will present the
+          audience with the NAI graphical tool and the basics of legal text formalization</p>
+          <h4>Automated reasoning on legal texts (given by <a href="https://www.alexandersteen.de/">Alexander Steen</a>)</h4>
+          <p class="lead">This lecture will present the field of automated reasoning. It will describe the capabilities of
+          automated theorem proving and will introduce the audience to the automated features of NAI</p>
+          <h4>Interactive session</h4>
+          <p class="lead">In the last lecture the participants will use the NAI tool in order to first formalize a legal text and then answer, fully
+          automatically, several different questions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="material" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Material</h2>
+          <p class="lead">To appear soon...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; The NAI Team 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
