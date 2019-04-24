@@ -145,7 +145,7 @@
             <ul>
               <li><span style="color:red" title="term: contract(Law,Part)">A contract</span> <span style="color:limegreen" title="connector: obligation only if">shall be governed by </span> <span style="color:dodgerblue" title="term: valid_choise(Law,Part)">the law chosen by the parties.</span></li>
               <li><span style="color:slateblue" title="term: choice(Law,Part)">The choice</span> <span style="color:olive" title="connector: definitional only if"> shall be made</span> <span style="color:peru" title="term: expressed(choice(Law,Part)">expressly</span> <span style="color:gray" title="connector: or">or</span> <span style="color:mediumvioletred" title="term: demonstrated_certainity(choice(Law, Part))">clearly demonstrated by the terms of the contract</span> <span style="color:thistle" title="connector: or">or</span> <span style="color:teal" title="term: demonstrated_circumstances(choice(Law,Part))">the circumstances of the case</span>.</li>
-              <li><span style="color:mediumseagreen" title="term: choice(Law,Part)">By their choice<span> <span style="color:crimson" title="equality">the parties can select the law applicable to</span> <span style="color:limegreen" title="choice(Law,whole)">the whole</span> <span style="color:yellowgreen" title="connector: or">or</span> to <span style="color:steelblue" title="choice(Law,part(SomePart))">part only of the contract</span>.</li>
+              <li><span style="color:mediumseagreen" title="term: choice(Law,Part)">By their choice<span> <span style="color:crimson" title="equality">the parties can select the law applicable to</span> <span style="color:limegreen" title="choice(Law,whole)">the whole</span> <span style="color:yellowgreen" title="connector: or">or</span> to <span style="color:steelblue" title="term: choice(Law,part(SomePart))">part only of the contract</span>.</li>
             </ul>
             <li>Once we finish a norm, we can ommediately check if it is consistent with respect to the other norms. If it is not, we can
               deactivate norms until we find which group of norms is responsible for the inconsistency. Removing inconsistencies is
@@ -155,11 +155,10 @@
             apply the interpretation to specific cases and has, therefore, further assumptions. This assumptions can also be
             checked for consistency with regard to the legislation. The following is an example of such query</li>
             <ul>
-              <li>Which law is applicable for the second part if a choice is made of using the Czech law  for the whole contract
-                but it was demonstrated only for the first part. We also know that
-                the contract is about franchise and that the habitual law is the French law.
+              <li><span style="color:red" title="goal+obligation: contract(french,part(two))">Is the French law applicable to the second part</span> if <span style="color:limegreen" title="term+assumption: choice(czech,whole)">a choice is made of using the Czech law for the whole contract</span>
+                <span style="color:slateblue" title="asumption+connector: and">but</span> <span style="color:crimson" title="assumption+term: demonstrated(czech,part(one))">it was demonstrated only for the first part</span>. <span style="color:yellowgreen" title="assumption+connector: and)">We also know that</span>
+                <span style="color:olive" title="assumption+term: franchise">the contract is about franchise</span> <span style="color:dodgerblue" title="assumption+connector: and">and</span> that <span style="color:mediumvioletred" title="assumption+term: habitual_law = french">the habitual law is the French law</span>.
               </li>
-              <li>TODO: annotate the above sentence so the assumptions and goal can be extracted.</li>
             </ul>
           </ul>
         </div>
