@@ -79,7 +79,7 @@
               (and where the definition of incorrectly includes, among other things, parking against the direction of the traffic),
               while another norm specifies the obligation to pay a fine of $50 when parking against the direction of traffic.</li>
             <li>It can help reasoning fully automatically. For example, given that I parked incorrectly but had an emergency, am I obliged to pay
-            the fine? Can I appeal? </li>
+            the fine? Can I appeal against the fine? </li>
           </ul>
           <p class="lead">The help of a computer is not only limited to the three points described above. For example, once an interpretation is
           given, a computer can be used in order to visualize all possible normative paths and can therefore help judges to avoid choosing
@@ -166,12 +166,12 @@
               deactivate norms until we find which group of norms is responsible for the inconsistency. Removing inconsistencies is
               crucial for the correctness of an interpretation and the tool can be used in order to detect and correct such problems.</li>
             <li>For each norm, we can also check if it is independent with respect to the remaining norms.</li>
-            <li>Lastly, we can move now from the legislation editor to the queries one and add different queries. Queries try to
+            <li>Lastly, we can move now from the legislation editor to the queries editor and add different queries. Queries try to
             apply the interpretation to specific cases and have, therefore, further assumptions. These assumptions can also be
-            checked for consistency with regard to the legislation. The following is an example of such query</li>
+            checked for consistency with regard to the legislation. The following is an example of such queries</li>
             <ul>
               <li><span style="color:red" title="goal+obligation: contract(french,part(two))">Is the French law applicable to the second part</span> if
-                <span style="color:limegreen" title="term+assumption: choice(czech,whole)">a choice is made of using the Czech law for the whole contract</span>
+                <span style="color:limegreen" title="term+assumption: choice(czech,whole)">the parties involved chose to use the Czech law for the whole contract</span>
                 <span style="color:slateblue" title="asumption+connector: and">but</span>
                 <span style="color:crimson" title="assumption+term: demonstrated_certainity_choice(czech,part(one))">it was demonstrated only for the first part</span>.
                 <span style="color:yellowgreen" title="assumption+connector: and)">We also know that</span>
